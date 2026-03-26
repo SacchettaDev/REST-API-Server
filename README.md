@@ -2,6 +2,10 @@
 
 REST API built with **Java 17** and **Spring Boot 3.4**. The project is meant to grow in **small steps** with **frequent commits** on GitHub.
 
+## Repository
+
+**GitHub:** [SacchettaDev/REST-API-Server](https://github.com/SacchettaDev/REST-API-Server)
+
 ## Requirements
 
 - **JDK 17+**
