@@ -1,47 +1,47 @@
 # REST API Server (Java)
 
-API REST em **Java 17** com **Spring Boot 3.4**. Projeto pensado para evoluir em **passos pequenos** e com **muitos commits** no GitHub.
+REST API built with **Java 17** and **Spring Boot 3.4**. The project is meant to grow in **small steps** with **frequent commits** on GitHub.
 
-## Requisitos
+## Requirements
 
-- JDK **17+**
-- **Maven** 3.9+ (ou deixar o Eclipse gerir dependências via M2E)
+- **JDK 17+**
+- **Maven 3.9+** (or let Eclipse manage dependencies via M2E)
 
 ### Eclipse
 
-**File → Import → Maven → Existing Maven Projects** → pasta `Rest-Api-Server` → Finish. Depois **Run As → Spring Boot App** (com Spring Tools instalado) ou **Run As → Java Application** em `RestApiServerApplication`.
+**File → Import → Maven → Existing Maven Projects** → select the `Rest-Api-Server` folder → Finish. Then **Run As → Spring Boot App** (with Spring Tools installed) or **Run As → Java Application** on `RestApiServerApplication`.
 
-## Correr localmente
+## Run locally
 
 ```bash
 mvn spring-boot:run
 ```
 
-Testar:
+Try it:
 
 ```bash
 curl http://localhost:8080/api/health
 ```
 
-Resposta esperada: `{"status":"UP","service":"rest-api-server"}`.
+Expected response: `{"status":"UP","service":"rest-api-server"}`.
 
-## Testes
+## Tests
 
 ```bash
 mvn test
 ```
 
-## Próximos passos (ideias para commits pequenos)
+## Next steps (ideas for small commits)
 
-1. `feat:` DTO de resposta dedicado para `/api/health` (em vez de `Map`).
-2. `feat:` Endpoint de exemplo CRUD (ex.: recurso `Item` em memória).
-3. `feat:` Validação com Bean Validation (`jakarta.validation`).
-4. `feat:` Tratamento global de erros (`@ControllerAdvice`).
-5. `chore:` Perfil `dev` / `prod` em `application-*.properties`.
-6. `feat:` Persistência (Spring Data JPA + H2 ou PostgreSQL).
+1. `feat:` Dedicated response DTO for `/api/health` (instead of `Map`).
+2. `feat:` Sample in-memory CRUD endpoint (e.g. `Item` resource).
+3. `feat:` Validation with Bean Validation (`jakarta.validation`).
+4. `feat:` Global error handling (`@ControllerAdvice`).
+5. `chore:` `dev` / `prod` profiles in `application-*.properties`.
+6. `feat:` Persistence (Spring Data JPA + H2 or PostgreSQL).
 
-Cada item pode ser **1 commit** (ou vários, ainda melhor para o histórico).
+Each item can be **one commit** (or several — even better for history).
 
-## Licença
+## License
 
-Definir quando quiseres (ex.: MIT).
+To be defined (e.g. MIT).

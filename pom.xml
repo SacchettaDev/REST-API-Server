@@ -15,7 +15,7 @@
     <artifactId>rest-api-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>REST API Server</name>
-    <description>REST API Server in Java (Spring Boot) — evolução incremental</description>
+    <description>REST API server in Java (Spring Boot), evolved incrementally</description>
 
     <properties>
         <java.version>17</java.version>
