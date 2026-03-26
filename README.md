@@ -5,7 +5,11 @@ API REST em **Java 17** com **Spring Boot 3.4**. Projeto pensado para evoluir em
 ## Requisitos
 
 - JDK **17+**
-- **Maven** 3.9+
+- **Maven** 3.9+ (ou deixar o Eclipse gerir dependências via M2E)
+
+### Eclipse
+
+**File → Import → Maven → Existing Maven Projects** → pasta `Rest-Api-Server` → Finish. Depois **Run As → Spring Boot App** (com Spring Tools instalado) ou **Run As → Java Application** em `RestApiServerApplication`.
 
 ## Correr localmente
 
